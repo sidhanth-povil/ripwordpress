@@ -1,0 +1,16 @@
+{
+  "name": "rip-wordpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@netlify/blobs": "^10.7.5",
+    "netlify-cli": "^26.0.1"
+  }
+}
