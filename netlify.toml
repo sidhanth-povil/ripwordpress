@@ -1,13 +1,13 @@
-functionsDirectory = "/Users/sidhanth/Desktop/RIP Wordpress/netlify/functions"
+functionsDirectory = "netlify/functions"
 functionsDirectoryOrigin = "default"
 plugins = []
 headers = []
 redirects = []
 
 [build]
-publish = "/Users/sidhanth/Desktop/RIP Wordpress"
+publish = "."
 publishOrigin = "default"
-functions = "/Users/sidhanth/Desktop/RIP Wordpress/netlify/functions"
+functions = "netlify/functions"
 
   [build.environment]
 
