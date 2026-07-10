@@ -1,6 +1,5 @@
 functionsDirectory = "netlify/functions"
 functionsDirectoryOrigin = "default"
-plugins = []
 headers = []
 
 [build]
@@ -31,3 +30,6 @@ functions = "netlify/functions"
   from = "/data"
   to = "/data.html"
   status = 200
+
+[[plugins]]
+  package = "/netlify/plugins/indexnow"
