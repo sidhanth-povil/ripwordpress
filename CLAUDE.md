@@ -11,3 +11,9 @@
   claim from a third-party article.
 - Every statistic must link to its source.
 - Semantic HTML, WCAG AA, responsive.
+- CSS is PRECOMPILED Tailwind (css/tailwind.css) — never re-add the runtime
+  cdn.tailwindcss.com script (it was killing Lighthouse perf). After changing any
+  Tailwind classes in home.html/data.html/js, rebuild and commit css/tailwind.css:
+    npm i -D tailwindcss@3 @tailwindcss/forms @tailwindcss/container-queries
+    npx tailwindcss -i input.css -o css/tailwind.css --minify
+  Netlify does not run this build; the committed CSS is what ships.
