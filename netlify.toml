@@ -2,7 +2,6 @@ functionsDirectory = "netlify/functions"
 functionsDirectoryOrigin = "default"
 plugins = []
 headers = []
-redirects = []
 
 [build]
 publish = "."
@@ -27,3 +26,8 @@ functions = "netlify/functions"
   node_bundler = "esbuild"
 
   [functions."*"]
+
+[[redirects]]
+  from = "/data"
+  to = "/data.html"
+  status = 200

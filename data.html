@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <!-- SEO & Metadata Core -->
+  <title>WordPress Market Share &amp; Death Predictions: The Record (2011–2026)</title>
+  <meta name="description"
+    content="Year-by-year WordPress market share from W3Techs (2011–2026), every notable &quot;WordPress is dead&quot; prediction, and what actually happened." />
+  <link rel="canonical" href="https://ripwordpress.com/data" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ripwordpress.com/data" />
+  <meta property="og:site_name" content="RIP WordPress" />
+  <meta property="og:title" content="WordPress Market Share &amp; Death Predictions: The Record (2011–2026)" />
+  <meta property="og:description"
+    content="The evidence file: year-by-year W3Techs market share, every death prediction, and what the share actually did." />
+
+  <!-- Dataset / WebPage structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "WordPress Market Share & Death Predictions: The Record (2011–2026)",
+    "description": "Year-by-year WordPress market share from W3Techs (2011–2026), every notable \"WordPress is dead\" prediction, and what actually happened.",
+    "url": "https://ripwordpress.com/data",
+    "isPartOf": { "@type": "WebSite", "name": "RIP WordPress", "url": "https://ripwordpress.com" },
+    "mainEntity": {
+      "@type": "Dataset",
+      "name": "WordPress share of all websites, 2011–2026",
+      "description": "Year-by-year WordPress market share as a percentage of all websites (including sites with no CMS), compiled from W3Techs historical data, 2011 through July 2026.",
+      "temporalCoverage": "2011/2026",
+      "creator": { "@type": "Organization", "name": "RIP WordPress", "url": "https://ripwordpress.com" },
+      "citation": "https://w3techs.com/technologies/details/cm-wordpress",
+      "isBasedOn": "https://w3techs.com/technologies/history_overview/content_management/ms/y",
+      "measurementTechnique": "W3Techs survey of the top ~10 million websites by traffic",
+      "variableMeasured": "WordPress share of all websites (percent)",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  }
+  </script>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script id="tailwind-config">
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "toxic-green": "#00ff41",
+            "fatal-yellow": "#ccff00",
+            "success-green": "#39ff14",
+            "error": "#ffb4ab",
+            "pure-white": "#e8f5ec",
+            "midnight-ink": "#0f1c14",
+            "deep-space-swamp": "#070e0a",
+            "outline": "#84967e",
+            "on-surface": "#dce5dd",
+            "surface": "#0e1511",
+            "surface-container": "#1a211d",
+            "surface-bright": "#333b36",
+            "primary-container": "#00ff41",
+            "on-primary": "#003907",
+          },
+          spacing: {
+            "sm": "8px",
+            "md": "16px",
+            "lg": "24px",
+            "xl": "40px",
+            "container-max": "1280px",
+            "gutter": "20px"
+          },
+          fontFamily: {
+            "headline-lg": ["Inter", "sans-serif"],
+            "headline-xl": ["Inter", "sans-serif"],
+            "label-caps": ["JetBrains Mono", "monospace"],
+            "code-md": ["JetBrains Mono", "monospace"],
+            "body-sm": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "terminal": ["JetBrains Mono", "monospace"]
+          },
+          fontSize: {
+            "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+            "code-md": ["14px", { "lineHeight": "1.4", "fontWeight": "500" }],
+            "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "terminal-huge": ["80px", { "lineHeight": "1", "letterSpacing": "-0.05em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black text-on-surface font-body-md overflow-x-hidden selection:bg-toxic-green selection:text-black">
+
+  <!-- Top Navigation -->
+  <header class="fixed top-0 z-[60] w-full bg-black/80 backdrop-blur-md border-b border-toxic-green/10">
+    <div class="flex justify-between items-center px-lg py-sm w-full max-w-container-max mx-auto">
+      <a href="/"
+        class="font-label-caps text-[16px] font-black tracking-tighter text-toxic-green drop-shadow-[0_0_10px_rgba(0,255,65,0.5)] hover:text-fatal-yellow transition-colors">
+        Sys.WP_RIP
+      </a>
+      <a href="/"
+        class="text-outline hover:text-toxic-green transition-colors duration-300 font-label-caps text-label-caps inline-flex items-center gap-2">
+        <span aria-hidden="true">&larr;</span> BACK_TO_AUTOPSY
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="py-20 md:py-28 px-4 md:px-lg max-w-container-max mx-auto border-b border-toxic-green/10">
+      <div class="max-w-3xl gsap-rev">
+        <span class="font-label-caps text-toxic-green text-[10px] tracking-widest uppercase block mb-4">EVIDENCE_FILE //
+          CASE No. WP-2026</span>
+        <h1 class="font-headline-xl text-3xl sm:text-5xl md:text-6xl font-black text-pure-white mb-6 leading-tight uppercase tracking-tight">
+          WordPress Market Share &amp; Death Predictions: The Record</h1>
+        <p class="font-code-md text-outline text-sm md:text-base leading-relaxed">Every year-by-year figure, every
+          predicted death, and what the share actually did — 2011 to 2026. Numbers are W3Techs share of <em>all</em>
+          websites unless noted. Last verified: July 2026.</p>
+      </div>
+    </section>
+
+    <!-- Section 1 — Market share table -->
+    <section id="table" class="py-20 md:py-28 px-4 md:px-lg max-w-container-max mx-auto border-b border-toxic-green/10">
+      <div class="mb-10 md:mb-14 gsap-rev">
+        <span class="font-label-caps text-toxic-green text-[10px] tracking-widest uppercase block mb-3">01 //
+          THE_TREND_LINE</span>
+        <h2 class="font-headline-lg text-headline-lg text-pure-white tracking-widest uppercase">Market Share, 2011–2026
+        </h2>
+      </div>
+
+      <div class="overflow-x-auto border border-toxic-green/20 bg-[#020503] gsap-rev">
+        <table class="w-full text-left border-collapse min-w-[560px]">
+          <caption class="sr-only">Share of all websites, including sites with no CMS. Source: W3Techs.</caption>
+          <thead>
+            <tr class="font-label-caps text-[11px] uppercase tracking-widest text-toxic-green border-b border-toxic-green/30">
+              <th scope="col" class="p-md">Year</th>
+              <th scope="col" class="p-md">Share of ALL websites (W3Techs)</th>
+              <th scope="col" class="p-md">Note</th>
+            </tr>
+          </thead>
+          <tbody class="font-code-md text-sm">
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2011</td><td class="p-md text-pure-white">13.1%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2012</td><td class="p-md text-pure-white">15.8%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2013</td><td class="p-md text-pure-white">17.4%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2014</td><td class="p-md text-pure-white">21.0%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2015</td><td class="p-md text-pure-white">23.3%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2016</td><td class="p-md text-pure-white">25.6%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2017</td><td class="p-md text-pure-white">27.3%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2018</td><td class="p-md text-pure-white">29.2%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2019</td><td class="p-md text-pure-white">32.7%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2020</td><td class="p-md text-pure-white">35.4%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2021</td><td class="p-md text-pure-white">39.5%</td><td class="p-md text-outline"></td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2022</td><td class="p-md text-pure-white">43.2%</td><td class="p-md text-outline">growth plateaus</td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2023</td><td class="p-md text-pure-white">43.1%</td><td class="p-md text-outline">first flat/slightly-down year</td></tr>
+            <tr class="border-b border-toxic-green/10 bg-toxic-green/5"><td class="p-md text-outline">2024</td><td class="p-md text-toxic-green font-bold">43.5%</td><td class="p-md text-outline">peak (August 2024)</td></tr>
+            <tr class="border-b border-toxic-green/10"><td class="p-md text-outline">2025</td><td class="p-md text-pure-white">~43.2%</td><td class="p-md text-outline">December 2025; five quarters of slow decline begin</td></tr>
+            <tr class="bg-error/5"><td class="p-md text-outline">2026</td><td class="p-md text-fatal-yellow font-bold">~41.5%</td><td class="p-md text-outline">July 2026, current; −1.3 pts in six months (Dec 2025 → May 2026)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="font-code-md text-outline/70 text-[11px] mt-4 leading-relaxed">Share of all websites, including sites
+        with no CMS. Source:
+        <a href="https://w3techs.com/technologies/details/cm-wordpress" target="_blank" rel="noopener"
+          class="text-toxic-green underline hover:text-fatal-yellow transition-colors">W3Techs</a>. Figures are
+        start-of-year unless noted. History compiled with reference to
+        <a href="https://w3techs.com/technologies/history_overview/content_management/ms/y" target="_blank"
+          rel="noopener" class="text-toxic-green underline hover:text-fatal-yellow transition-colors">W3Techs history</a>
+        and
+        <a href="https://kinsta.com/wordpress-market-share/" target="_blank" rel="noopener"
+          class="text-toxic-green underline hover:text-fatal-yellow transition-colors">Kinsta's market-share
+          compilation</a>.</p>
+    </section>
+
+    <!-- Section 2 — Context stats -->
+    <section id="context" class="py-20 md:py-28 px-4 md:px-lg max-w-container-max mx-auto border-b border-toxic-green/10">
+      <div class="mb-10 md:mb-14 gsap-rev">
+        <span class="font-label-caps text-toxic-green text-[10px] tracking-widest uppercase block mb-3">02 //
+          THE_FIELD</span>
+        <h2 class="font-headline-lg text-headline-lg text-pure-white tracking-widest uppercase">For Context</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <p class="font-body-sm text-outline">Nearest competitor: <strong class="text-pure-white">Shopify ~5.2%</strong>
+            of all websites.
+            <a href="https://w3techs.com/technologies/overview/content_management" target="_blank" rel="noopener"
+              class="text-toxic-green underline hover:text-fatal-yellow transition-colors">(W3Techs, July 2026)</a></p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <p class="font-body-sm text-outline">Then: <strong class="text-pure-white">Wix ~4.3%</strong> of all websites.
+            <a href="https://w3techs.com/technologies/overview/content_management" target="_blank" rel="noopener"
+              class="text-toxic-green underline hover:text-fatal-yellow transition-colors">(W3Techs, July 2026)</a></p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <p class="font-body-sm text-outline">WordPress share among sites with a known CMS:
+            <strong class="text-pure-white">~59%</strong>.
+            <a href="https://w3techs.com/technologies/overview/content_management" target="_blank" rel="noopener"
+              class="text-toxic-green underline hover:text-fatal-yellow transition-colors">(W3Techs, July 2026)</a></p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-fatal-yellow p-md md:p-lg gsap-rev">
+          <p class="font-body-sm text-outline">Estimated live WordPress sites: <strong class="text-pure-white">~38M
+              active</strong> (BuiltWith) up to <strong class="text-pure-white">~500M+</strong> hostname-based
+            estimates. The definitional spread is real — no single number is "the" count.
+            <a href="https://trends.builtwith.com/cms/WordPress" target="_blank" rel="noopener"
+              class="text-toxic-green underline hover:text-fatal-yellow transition-colors">(BuiltWith)</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 — Predicted deaths vs reality -->
+    <section id="predictions"
+      class="py-20 md:py-28 px-4 md:px-lg max-w-container-max mx-auto border-b border-toxic-green/10">
+      <div class="mb-10 md:mb-14 gsap-rev">
+        <span class="font-label-caps text-toxic-green text-[10px] tracking-widest uppercase block mb-3">03 //
+          CAUSE_OF_DEATH: DISPUTED</span>
+        <h2 class="font-headline-lg text-headline-lg text-pure-white tracking-widest uppercase">Predicted Deaths vs.
+          Reality</h2>
+      </div>
+
+      <div class="max-w-3xl flex flex-col gap-6">
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-toxic-green text-xs tracking-wider">2013–2014</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"Drag-and-drop builders will kill WordPress."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">The Wix and Squarespace ad-blitz era. WordPress went
+            <strong class="text-success-green">17.4% → 21.0%</strong>.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-toxic-green text-xs tracking-wider">2015–2016</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"Medium and Ghost make WordPress obsolete for
+            publishing."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">WordPress went <strong class="text-success-green">23.3% →
+              25.6%</strong>. Medium later pivoted repeatedly; Ghost stayed niche.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-toxic-green text-xs tracking-wider">2018</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"Gutenberg will be the death of WordPress."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">The block-editor backlash; ClassicPress fork launches.
+            WordPress went <strong class="text-success-green">29.2% → 32.7%</strong> the following year.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-toxic-green p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-toxic-green text-xs tracking-wider">2020</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"Jamstack/headless kills the monolith."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">The static-site and headless hype cycle. WordPress went
+            <strong class="text-success-green">35.4% → 39.5%</strong>.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-fatal-yellow p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-fatal-yellow text-xs tracking-wider">2022</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"No-code platforms end WordPress."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">Growth <em>does</em> plateau (~43%) — the first
+            prediction wave with partial evidence.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-fatal-yellow p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-fatal-yellow text-xs tracking-wider">2024</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"The Automattic vs WP Engine conflict will collapse
+            the ecosystem."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">A governance crisis with real reputational damage. Share
+            peaked at <strong class="text-fatal-yellow">43.5%</strong> that August, then plateaued.</p>
+        </div>
+        <div class="bg-[#020503] border-l-2 border-error p-md md:p-lg gsap-rev">
+          <span class="font-label-caps text-error text-xs tracking-wider">2025–2026</span>
+          <h3 class="font-body-md text-pure-white font-bold mt-1 mb-2">"AI site builders make WordPress irrelevant."</h3>
+          <p class="font-body-sm text-outline leading-relaxed">The first wave coinciding with a measurable, sustained
+            decline: <strong class="text-error">43.2% (Dec 2025) → ~41.5% (Jul 2026)</strong>. Verdict:
+            <strong class="text-fatal-yellow">pending</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — The honesty section -->
+    <section id="decline" class="py-20 md:py-28 px-4 md:px-lg bg-[#020503] border-b border-toxic-green/20">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-8 gsap-rev">
+          <span class="font-label-caps text-error text-[10px] tracking-widest uppercase block mb-3">04 //
+            THE_HONEST_PART</span>
+          <h2 class="font-headline-lg text-headline-lg text-pure-white tracking-widest uppercase">Yes, the Patient Is
+            Losing Weight</h2>
+        </div>
+        <div class="space-y-5 font-body-md text-outline leading-relaxed gsap-rev">
+          <p>W3Techs shows <strong class="text-pure-white">six consecutive quarters of decline</strong>, and the pace
+            doubled: <strong class="text-pure-white">−1.3 pts in six months</strong> (Dec 2025 → May 2026) versus −0.6
+            pts across all of 2025.
+            <a href="https://w3techs.com/technologies/history_overview/content_management/ms/y" target="_blank"
+              rel="noopener" class="text-toxic-green underline hover:text-fatal-yellow transition-colors">(W3Techs)</a>
+          </p>
+          <p>A second dataset agrees on direction. <strong class="text-pure-white">HTTP Archive</strong> (different
+            methodology — ~9M sites via the Chrome UX Report) shows an earlier peak of
+            <strong class="text-pure-white">35.76% in July 2022</strong> and <strong class="text-pure-white">~33% in
+              mid-2026</strong>. Two datasets, one direction.</p>
+          <p class="text-pure-white border-l-2 border-toxic-green pl-5 italic">"Declining is not dead. The gap to the
+            nearest competitor is roughly 9×. Both things are true. That's the whole point of this page."</p>
+          <p class="font-body-sm text-outline/80">Decline coverage:
+            <a href="https://www.searchenginejournal.com/wordpress-market-share-in-decline/576042/" target="_blank"
+              rel="noopener" class="text-toxic-green underline hover:text-fatal-yellow transition-colors">Search Engine
+              Journal</a> ·
+            <a href="https://therepository.email/wordpress-market-share-series-data" target="_blank" rel="noopener"
+              class="text-toxic-green underline hover:text-fatal-yellow transition-colors">The Repository</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 — Methodology -->
+    <section id="methodology" class="py-20 md:py-28 px-4 md:px-lg max-w-container-max mx-auto">
+      <div class="max-w-3xl">
+        <div class="mb-8 gsap-rev">
+          <span class="font-label-caps text-outline text-[10px] tracking-widest uppercase block mb-3">05 //
+            METHODOLOGY</span>
+          <h2 class="font-headline-lg text-2xl text-pure-white tracking-widest uppercase">The Small Print</h2>
+        </div>
+        <ul class="space-y-4 font-body-sm text-outline/80 leading-relaxed gsap-rev">
+          <li class="border-t border-toxic-green/10 pt-4"><strong class="text-pure-white">What W3Techs measures:</strong>
+            the top ~10 million sites by traffic (its "relevant web"), and it counts sites with <em>no</em> CMS in the
+            denominator — so WordPress's "all websites" figure is diluted by every static and hand-coded site online.</li>
+          <li class="border-t border-toxic-green/10 pt-4"><strong class="text-pure-white">Why W3Techs and HTTP Archive
+              disagree:</strong> W3Techs samples top-traffic sites; HTTP Archive samples ~9M origins from the Chrome UX
+            Report. Different populations, different sampling — so the absolute numbers differ while the trend direction
+            agrees.</li>
+          <li class="border-t border-toxic-green/10 pt-4"><strong class="text-pure-white">Freshness:</strong> Last
+            verified July 2026. Figures marked <span class="font-code-md text-toxic-green">~</span> are the latest
+            published values and move monthly.</li>
+        </ul>
+        <p class="mt-10 gsap-rev">
+          <a href="/"
+            class="font-label-caps text-toxic-green text-sm tracking-widest uppercase inline-flex items-center gap-2 hover:text-fatal-yellow transition-colors">
+            <span aria-hidden="true">&larr;</span> Back to the autopsy
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full bg-[#030504] border-t-[8px] border-toxic-green py-16 px-4 md:px-lg">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div class="font-terminal text-toxic-green text-sm opacity-80">Sys.WP_RIP // EVIDENCE_FILE</div>
+      <div class="font-code-md text-outline/60 text-[11px]">Sources: W3Techs, HTTP Archive, BuiltWith, WordPress.org.
+        Last verified July 2026.</div>
+      <a href="/" class="font-label-caps text-outline hover:text-toxic-green transition-colors text-label-caps">HOME</a>
+    </div>
+  </footer>
+
+  <!-- GSAP entrance (self-contained; content is fully visible without JS) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof gsap === "undefined") return;
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray('.gsap-rev').forEach(target => {
+        gsap.set(target, { autoAlpha: 0, y: 20 });
+        gsap.to(target, { autoAlpha: 1, y: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: target, start: "top 85%" } });
+      });
+    });
+  </script>
+</body>
+
+</html>
