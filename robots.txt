@@ -1,4 +1,25 @@
+# ripwordpress.com — all crawlers welcome, AI/LLM bots explicitly included.
+
 User-agent: *
+Allow: /
+
+# AI / LLM crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://ripwordpress.com/sitemap.xml
