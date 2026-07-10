@@ -24,5 +24,6 @@ functions = "netlify/functions"
   [build.services]
 
 [functions]
+  node_bundler = "esbuild"
 
   [functions."*"]
